@@ -1,0 +1,20 @@
+// @import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+// @import url("https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600&display=swap");
+@import "./styles/colors.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Titillium Web", sans-serif;
+	padding: 0 100px;
+}
+
+a {
+	color: $myBlack;
+	text-decoration: none;
+}
