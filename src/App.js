@@ -1,25 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import Home from "./pages/home/home.page";
-import About from "./pages/about/about.page";
+import Home from "./pages/Home";
 import SinglePost from "./components/singlepost/singlepost.component";
-import Posts from "./pages/posts/posts.page";
-import Projects from "./pages/projects/projects.page";
+import Blog from "./pages/Blog";
 import Resume from "./pages/resume/resume.page";
-import Navbar from "./components/navbar/navbar.component";
-import Footer from "./components/footer/footer.component";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
 		<BrowserRouter>
-			<Navbar />
+			<Navbar toogle={toggle} />
 			<Switch>
 				<Route component={Home} path="/" exact />
-				<Route component={About} path="/about" exact />
 				<Route component={SinglePost} path="/post/:slug" exact />
-				<Route component={Posts} path="/posts" exact />
-				<Route component={Projects} path="/projects" exact />
+				<Route component={Blog} path="/blog" exact />
 				<Route component={Resume} path="/resume" exact />
 			</Switch>
 			<Footer />
