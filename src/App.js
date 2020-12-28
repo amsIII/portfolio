@@ -23,7 +23,7 @@ function App() {
 				<Route component={Blog} path="/blog" exact />
 				<Route component={Resume} path="/resume" exact />
 			</Switch>
-			<Footer />
+			{/* <Footer /> */}
 		</BrowserRouter>
 	);
 }

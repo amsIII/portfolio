@@ -1,16 +1,15 @@
 import styled from "styled-components";
 
-export const GreetContainer = styled.div`
+export const AboutContainer = styled.div`
 	display: grid;
 	grid-template-columns: 53% 1fr;
 	grid-template-rows: repeat(2, 1fr);
-	margin-top: 50px;
+	margin-top: 60px;
 	padding: 0 100px;
 	color: #f3f3f3;
 	height: 650px;
 	font-family: "Roboto", sans-serif;
 	${"" /* font-family: "Roboto Mono", monospace; */}
-	${"" /* margin-top: -100px; */}
 `;
 
 export const ImgWrap = styled.div`
