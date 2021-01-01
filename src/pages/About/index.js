@@ -1,40 +1,43 @@
 import React from "react";
 import {
-	GreetContainer,
-	ImgWrap,
+	AboutSection,
+	ImgContainer,
 	Img,
-	GreetingContainer,
-	GreetingIntro,
-	GreetingSpan,
-	GreetingTitle,
-	GreetingP,
+	AboutContainer,
+	TextContainer,
+	Greeting,
+	Title,
+	Location,
+	AboutText,
 } from "./About.styles";
+import ValBtn from "../../components/Button";
 
-const Greeting = ({ id, greeting, title, img, alt }) => {
+const AboutPage = ({ id, greeting, title, img, alt }) => {
 	return (
 		<>
-			{/* Greet WILL CONTAIN ABOUT AND PROJECTS, BLOG AND RESUME WILL REMAIN SEPARATE LNKS */}
-			<GreetContainer id={id}>
-				<ImgWrap>
+			<AboutSection id={id}>
+				<ImgContainer>
 					<Img src={img} alt={alt} />
-				</ImgWrap>
-				<GreetingIntro>
-					{greeting} <GreetingSpan>Angel!</GreetingSpan>
-					<GreetingTitle>{title}</GreetingTitle>
-				</GreetingIntro>
-				<GreetingContainer>
-					<GreetingP>
-						Keep scrolling and you'll find the About section outlining my Web
-						Dev journey and how I got here, my projects, and most recent blogs.
-						Looking to pass along an opportunity? My resume can be found in the
-						top-right corner. However, using a resume to guage my employability
-						is kind of, well, old-fashioned. Send me an email, let's chat and
-						get to know each other!
-					</GreetingP>
-				</GreetingContainer>
-			</GreetContainer>
+				</ImgContainer>
+
+				<AboutContainer>
+					<TextContainer>
+						<Greeting>Hi, My name is Angel!</Greeting>
+						<Title>Front-End Web Developer</Title>
+						<Location>Philadelphia</Location>
+						<AboutText>
+							I'm an autodidact, freelance, Front-End Web Developer based out of
+							Philadelphia. I assist local small businesses with landing pages,
+							content editing and management, and maintainance. I'm currently
+							working on an Ecommerce website to assist small business with the
+							addition or transition from Brick and Mortar to Ecommerce.
+						</AboutText>
+					</TextContainer>
+					<ValBtn btnText={"Push"} />
+				</AboutContainer>
+			</AboutSection>
 		</>
 	);
 };
 
-export default Greeting;
+export default AboutPage;
