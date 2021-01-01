@@ -1,55 +1,55 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const AboutSection = styled.div`
+	height: 100vh;
+	width: 100vw;
 	display: grid;
-	grid-template-columns: 53% 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	margin-top: 60px;
-	padding: 0 100px;
-	color: #f3f3f3;
-	height: 650px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 25px;
+	${"" /* background: #333; */}
 	font-family: "Roboto", sans-serif;
-	${"" /* font-family: "Roboto Mono", monospace; */}
 `;
 
-export const ImgWrap = styled.div`
-	max-width: 350px;
-	height: 100%;
-	justify-self: end;
+export const ImgContainer = styled.div`
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 `;
 export const Img = styled.img`
+	width: 85%;
+	padding: 7px;
+	border: 10px solid #262626;
+`;
+
+export const AboutContainer = styled.div`
 	width: 100%;
-	border-radius: 50%;
-	transform: rotate(30deg);
+	height: 55%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: auto 0;
 `;
 
-export const GreetingIntro = styled.p`
+export const TextContainer = styled.div``;
+
+export const Greeting = styled.div`
+	font-size: 60px;
+	font-family: "Ubuntu Mono", monospace;
+	margin-bottom: 10px;
+`;
+export const Title = styled.div`
 	font-size: 24px;
-	font-weight: 500;
-	justify-self: start;
-	align-self: center;
-	margin-left: 10px;
-`;
-
-export const GreetingSpan = styled.span`
 	font-weight: 600;
 `;
-
-export const GreetingTitle = styled.p`
-	font-size: 16px;
-	font-weight: 400;
-	text-align: right;
+export const Location = styled.div`
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
 `;
-
-export const GreetingContainer = styled.div`
-	height: 100%;
-	width: 45%;
-	grid-area: 2 / span 2;
-	justify-self: center;
-	margin-top: 10px;
-`;
-
-export const GreetingP = styled.p`
-	font-size: 18px;
+export const AboutText = styled.div`
+	font-size: 24px;
 	font-weight: 400;
 `;

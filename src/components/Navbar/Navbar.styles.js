@@ -33,7 +33,7 @@ export const LogoContainer = styled.div`
 export const Logo = styled.h1`
 	font-size: 24px;
 	font-weight: 900;
-	color: #2ab0bf;
+	color: #2783b3;
 	letter-spacing: 1px;
 	cursor: pointer;
 	@media screen and (max-width: 1280px) {
@@ -49,7 +49,7 @@ export const NavLinksWrapper = styled.div`
 export const Home = styled(LinkR)`
 	font-size: 24px;
 	font-weight: 700;
-	color: #2ab0bf;
+	${"" /* color: #2783b3; */}
 
 	@media screen and (max-width: 1280px) {
 		font-size: 20px;
@@ -59,7 +59,7 @@ export const Home = styled(LinkR)`
 export const NavLinks = styled(LinkS)`
 	font-size: 20px;
 	font-weight: 600;
-	color: #f3f3f3;
+	color: ${({ scrollNav }) => (scrollNav ? "#f5f5f5" : "#262626")};
 	letter-spacing: 1px;
 	cursor: pointer;
 	height: 100%;
@@ -70,14 +70,14 @@ export const NavLinks = styled(LinkS)`
 	}
 
 	&:hover {
-		color: #d98f89;
+		color: #ff4655;
 		transition: 0.1s all ease-in-out;
 	}
 
 	&.active {
-		color: #bfa41b;
+		color: #ff4655;
 		margin-top: 2px;
-		border-bottom: 2px solid #bfa41b;
+		border-bottom: 2px solid #ff4655;
 		transition: 0.1s all ease-in-out;
 	}
 
@@ -90,7 +90,7 @@ export const Resume = styled.a`
 	justify-self: start;
 	font-size: 20px;
 	font-weight: 600;
-	color: #08a689;
+	color: #2783b3;
 	cursor: pointer;
 	margin-left: 10px;
 

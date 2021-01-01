@@ -48,6 +48,7 @@ const Navbar = () => {
 							spy={true}
 							exact="true"
 							offset={-100}
+							scrollNav={scrollNav}
 						>
 							About
 						</NavLinks>
@@ -58,6 +59,7 @@ const Navbar = () => {
 							spy={true}
 							exact="true"
 							offset={-80}
+							scrollNav={scrollNav}
 						>
 							Projects
 						</NavLinks>
@@ -68,6 +70,7 @@ const Navbar = () => {
 							spy={true}
 							exact="true"
 							offset={-80}
+							scrollNav={scrollNav}
 						>
 							Blog
 						</NavLinks>
