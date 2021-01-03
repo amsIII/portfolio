@@ -29,6 +29,7 @@ export const LogoContainer = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	width: 300px;
 `;
 export const Logo = styled.h1`
 	font-size: 24px;

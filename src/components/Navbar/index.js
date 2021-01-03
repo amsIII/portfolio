@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import ValBtn from "../Button";
 import {
 	NavWrap,
 	NavContainer,
@@ -35,7 +36,8 @@ const Navbar = () => {
 			<NavWrap scrollNav={scrollNav}>
 				<NavContainer scrollNav={scrollNav}>
 					<LogoContainer>
-						<Logo onClick={toTop}>AMSIII</Logo>
+						<ValBtn onClick={toTop} btnText={"AMSIII"} />
+						{/* <Logo onClick={toTop}>AMSIII</Logo> */}
 					</LogoContainer>
 					<NavLinksWrapper>
 						<Home to="/" onClick={toTop}>
