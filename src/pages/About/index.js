@@ -2,6 +2,12 @@ import React from "react";
 import {
 	AboutSection,
 	ImgContainer,
+	Wrapper,
+	ImgWrap,
+	SocialLinks,
+	SocialLinkIcon,
+	Bg,
+	Base,
 	Img,
 	AboutContainer,
 	TextContainer,
@@ -10,6 +16,7 @@ import {
 	Location,
 	AboutText,
 } from "./About.styles";
+import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import ValBtn from "../../components/Button";
 
 const AboutPage = ({ id, greeting, title, img, alt }) => {
@@ -17,7 +24,47 @@ const AboutPage = ({ id, greeting, title, img, alt }) => {
 		<>
 			<AboutSection id={id}>
 				<ImgContainer>
-					<Img src={img} alt={alt} />
+					<Wrapper>
+						<ImgWrap>
+							<Bg></Bg>
+							<Base></Base>
+							<Img src={img} alt={alt} />
+							<SocialLinks>
+								<SocialLinkIcon
+									href="/"
+									target="_blank"
+									aria-label="Linkedin"
+									rel="noreferrer noopener"
+								>
+									<FaLinkedin />
+								</SocialLinkIcon>
+								<SocialLinkIcon
+									target="_blank"
+									aria-label="Instagram"
+									href="https://www.instagram.com/KindOfADev/"
+									rel="noreferrer noopener"
+								>
+									<FaInstagram />
+								</SocialLinkIcon>
+								<SocialLinkIcon
+									target="_blank"
+									aria-label="Twitter"
+									href="//www.twitter.com/briandesignz"
+									rel="noreferrer noopener"
+								>
+									<FaTwitter />
+								</SocialLinkIcon>
+								<SocialLinkIcon
+									target="_blank"
+									aria-label="Twitter"
+									href="https://github.com/amsIII"
+									rel="noreferrer noopener"
+								>
+									<FaTwitter />
+								</SocialLinkIcon>
+							</SocialLinks>
+						</ImgWrap>
+					</Wrapper>
 				</ImgContainer>
 
 				<AboutContainer>
@@ -33,7 +80,7 @@ const AboutPage = ({ id, greeting, title, img, alt }) => {
 							addition or transition from Brick and Mortar to Ecommerce.
 						</AboutText>
 					</TextContainer>
-					<ValBtn btnText={"Push"} />
+					{/* <ValBtn btnText={"Push"} /> */}
 				</AboutContainer>
 			</AboutSection>
 		</>

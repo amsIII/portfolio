@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Btn = styled(Link)`
 	box-sizing: content-box;
-	height: 54px;
+	${"" /* height: 54px; */}
 	width: 100%;
 	max-width: 100px;
 	padding: 8px;
@@ -45,12 +45,15 @@ export const Btn = styled(Link)`
 
 export const BtnP = styled.p`
 	margin: 0;
-	height: 54px;
-	line-height: 54px;
+	height: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	box-sizing: border-box;
 	z-index: 1;
 	left: 0;
-	width: 100%;
+
 	position: relative;
 	overflow: hidden;
 `;
@@ -95,7 +98,10 @@ export const Text = styled.span`
 	position: absolute;
 	left: 0;
 	top: 0;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
 	&:after {
 		content: "";
 		width: 4px;
