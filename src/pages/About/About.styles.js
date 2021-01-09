@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const AboutSection = styled.div`
 	height: 100vh;
 	width: 100vw;
+	padding: 0 100px;
+	font-family: "Roboto", sans-serif;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
 	grid-gap: 25px;
-	font-family: "Roboto", sans-serif;
-	padding: 0 125px;
 `;
 
 export const ImgContainer = styled.div`
@@ -128,12 +128,16 @@ export const Img = styled.img`
 export const AboutContainer = styled.div`
 	width: 100%;
 	max-width: 555px;
-	height: 45%;
+	height: 50%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: flex-start;
 	margin: auto 0;
+
+	@media screen and (max-width: 1280px) {
+		font-size: 42px;
+	}
 `;
 
 export const TextContainer = styled.div`
@@ -142,23 +146,36 @@ export const TextContainer = styled.div`
 `;
 
 export const Greeting = styled.div`
-	font-size: 52px;
+	font-size: 48px;
 	font-family: "Ubuntu Mono", monospace;
 	margin-bottom: 10px;
+
+	@media screen and (max-width: 1280px) {
+		font-size: 42px;
+	}
 `;
 export const Title = styled.div`
 	font-size: 24px;
 	font-weight: 600;
+	@media screen and (max-width: 1280px) {
+		font-size: 20px;
+	}
 `;
 export const Location = styled.div`
 	font-size: 20px;
 	font-weight: 600;
 	margin-bottom: 20px;
+	@media screen and (max-width: 1280px) {
+		font-size: 18px;
+	}
 `;
 export const AboutText = styled.div`
 	font-size: 24px;
 	font-weight: 400;
 	text-align: justify;
+	@media screen and (max-width: 1280px) {
+		font-size: 20px;
+	}
 `;
 
 export const SocialLinks = styled.div`
@@ -186,7 +203,6 @@ export const ContactBtn = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-top: 15px;
 `;
 
 export const ContactBtnLink = styled.a`
@@ -197,8 +213,10 @@ export const ContactBtnLink = styled.a`
 	padding: 10px;
 	border-radius: 5px;
 	color: #f5f5f5;
+	transition: 0.2s ease-out all;
 
 	&:hover {
-		transform: scale(1.1, 1.1);
+		transform: scale(1.05, 1.05);
+		transition: 0.3s ease-out all;
 	}
 `;

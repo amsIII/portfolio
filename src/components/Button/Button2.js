@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 // import { Btn, BtnP, Bg, Base, Text } from "./button.styles";
-
-import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 import styled from "styled-components";
 
-export const Btn = styled(Link)`
+export const Btn = styled(LinkR)`
 	box-sizing: content-box;
 	${"" /* height: 54px; */}
 	width: 100%;
@@ -140,9 +141,14 @@ const Btn2 = ({ btnText1, btnText2 }) => {
 		window.addEventListener("scroll", changeNav);
 	}, []);
 
+	const toTop = () => {
+		scroll.scrollToTop();
+	};
+
 	return (
 		<Btn
 			scrollNav={scrollNav}
+			onClick={toTop}
 			onMouseEnter={() => setIsShown(true)}
 			onMouseLeave={() => setIsShown(false)}
 		>

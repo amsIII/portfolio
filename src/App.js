@@ -6,6 +6,7 @@ import SinglePost from "./components/singlepost/singlepost.component";
 import Blog from "./pages/Blog";
 import Resume from "./pages/resume/resume.page";
 import Navbar from "./components/Navbar";
+import Projects from "./pages/Projects";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
 			<Navbar toogle={toggle} />
 			<Switch>
 				<Route component={Home} path="/" exact />
+				<Route component={Projects} path="/projects" exact />
 				<Route component={SinglePost} path="/post/:slug" exact />
 				<Route component={Blog} path="/blog" exact />
 				<Route component={Resume} path="/resume" exact />

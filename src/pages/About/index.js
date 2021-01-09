@@ -23,7 +23,7 @@ import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 const AboutPage = ({ id, greeting, title, img, alt }) => {
 	return (
 		<>
-			<AboutSection id={id}>
+			<AboutSection id="about">
 				<ImgContainer>
 					<Wrapper>
 						<ImgWrap>

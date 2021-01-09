@@ -36,12 +36,7 @@ const Navbar = () => {
 			<NavWrap scrollNav={scrollNav}>
 				<NavContainer scrollNav={scrollNav}>
 					<LogoContainer>
-						<Btn2
-							scrollNav={scrollNav}
-							onClick={toTop}
-							btnText1={"AMSIII"}
-							btnText2={"HOME"}
-						/>
+						<Btn2 scrollNav={scrollNav} btnText1={"AMSIII"} btnText2={"HOME"} />
 						{/* <Logo onClick={toTop}>AMSIII</Logo> */}
 					</LogoContainer>
 					<NavLinksWrapper>
@@ -54,18 +49,18 @@ const Navbar = () => {
 							duration={500}
 							spy={true}
 							exact="true"
-							offset={-100}
+							offset={-80}
 							scrollNav={scrollNav}
 						>
 							About
 						</NavLinks>
 						<NavLinks
-							to="/projects"
+							to="projects"
 							smooth={true}
 							duration={500}
 							spy={true}
 							exact="true"
-							offset={-80}
+							offset={-20}
 							scrollNav={scrollNav}
 						>
 							Projects
