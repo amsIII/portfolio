@@ -1,3 +1,6 @@
+import React from "react";
+// import { Btn, BtnP, Bg, Base, Text } from "./button.styles";
+
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -9,7 +12,7 @@ export const Btn = styled(Link)`
 	padding: 8px;
 	font-size: 0.8rem;
 	font-weight: 900;
-	color: #ff4655;
+	color: #2783b3;
 	text-transform: uppercase;
 	text-decoration: none;
 	box-shadow: 0 0 0 1px inset rgba(38, 38, 38, 0.8);
@@ -63,7 +66,7 @@ export const Bg = styled.span`
 	height: 100%;
 	left: -5%;
 	position: absolute;
-	background: #ff4655;
+	background: #2783b3;
 	width: 0;
 	height: 100%;
 	z-index: 3;
@@ -78,7 +81,7 @@ export const Base = styled.span`
 	width: 100%;
 	height: 100%;
 	left: 0;
-	border: 1px solid #ff4655;
+	border: 1px solid #2783b3;
 	&::before {
 		content: "";
 		width: 3px;
@@ -114,3 +117,17 @@ export const Text = styled.span`
 		z-index: 5;
 	}
 `;
+
+const Btn1 = ({ btnText }) => {
+	return (
+		<Btn>
+			<BtnP>
+				<Bg></Bg>
+				<Base></Base>
+				<Text>{btnText}</Text>
+			</BtnP>
+		</Btn>
+	);
+};
+
+export default Btn1;

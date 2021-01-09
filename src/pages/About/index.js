@@ -15,9 +15,10 @@ import {
 	Title,
 	Location,
 	AboutText,
+	ContactBtn,
+	ContactBtnLink,
 } from "./About.styles";
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
-import ValBtn from "../../components/Button";
 
 const AboutPage = ({ id, greeting, title, img, alt }) => {
 	return (
@@ -76,11 +77,14 @@ const AboutPage = ({ id, greeting, title, img, alt }) => {
 							I'm an autodidact, freelance, Front-End Web Developer based out of
 							Philadelphia. I assist local small businesses with landing pages,
 							content editing and management, and maintainance. I'm currently
-							working on an Ecommerce website to assist small business with the
-							addition or transition from Brick and Mortar to Ecommerce.
+							working on a website to assist small businesses with the addition
+							and Ecommerce site, or transition from Brick and Mortar to
+							Ecommerce, or both.
 						</AboutText>
 					</TextContainer>
-					{/* <ValBtn btnText={"Push"} /> */}
+					<ContactBtn>
+						<ContactBtnLink href="#">Get in touch!</ContactBtnLink>
+					</ContactBtn>
 				</AboutContainer>
 			</AboutSection>
 		</>

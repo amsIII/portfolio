@@ -6,7 +6,6 @@ import SinglePost from "./components/singlepost/singlepost.component";
 import Blog from "./pages/Blog";
 import Resume from "./pages/resume/resume.page";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,6 @@ function App() {
 				<Route component={Blog} path="/blog" exact />
 				<Route component={Resume} path="/resume" exact />
 			</Switch>
-			{/* <Footer /> */}
 		</BrowserRouter>
 	);
 }

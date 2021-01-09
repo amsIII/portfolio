@@ -17,7 +17,7 @@ export const NavWrap = styled.nav`
 
 export const NavContainer = styled.div`
 	width: 100%;
-	height: 60px;
+	height: 80px;
 	padding: 0 50px;
 	display: flex;
 	justify-content: space-between;
@@ -30,6 +30,14 @@ export const LogoContainer = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	width: 300px;
+
+	/* & span {
+		color: ${({ scrollNav }) => (scrollNav ? "#262626" : "#f5f5f5")};
+
+		&::hover {
+			color: ${({ scrollNav }) => (scrollNav ? "#f5f5f5" : "#262626")};
+		}
+	} */
 `;
 export const Logo = styled.h1`
 	font-size: 24px;
@@ -71,14 +79,14 @@ export const NavLinks = styled(LinkS)`
 	}
 
 	&:hover {
-		color: #ff4655;
+		color: #2783b3;
 		transition: 0.1s all ease-in-out;
 	}
 
 	&.active {
-		color: #ff4655;
+		color: #2783b3;
 		margin-top: 2px;
-		border-bottom: 2px solid #ff4655;
+		border-bottom: 2px solid #2783b3;
 		transition: 0.1s all ease-in-out;
 	}
 
